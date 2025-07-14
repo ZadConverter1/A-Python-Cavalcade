@@ -133,23 +133,6 @@ def min_max_sum(array):
     return total
 
 
-class WordAnalyzer():
-    def __init__(self, words):
-        self.words_list = []
-        self.initial_sorter(words)
-
-    def initial_sorter(self, *letters: str):
-        letter_list = []
-        words_string = ""
-        for items in letters:
-            letter_list.append(items)
-        for elements in letter_list:
-            if elements != " ":
-                words_string += elements
-                self.words_list.append(words_string)
-                words_string = ""
-
-
 class SillyString():
     def __init__(self, string: str):
         self.base = string
