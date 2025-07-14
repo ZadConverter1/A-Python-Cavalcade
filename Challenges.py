@@ -207,10 +207,6 @@ def longest_substring(string):
                 check.append(chars[idx + 1])
 
         idx += 1
-
-    print(lone)
-    print(check)
-
     lone.sort(reverse=True)
     return lone[0]
 
@@ -320,3 +316,7 @@ def reverser(string: str):
 
     reversed = "".join([letter for letter in chars_backward])
     return reversed
+
+
+longest = longest_substring("ahgrueuushhdhaaaaawuqughsuichchhcbbdd")
+print(longest_substring)
