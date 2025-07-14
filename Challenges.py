@@ -265,11 +265,11 @@ def anagrams(string1: str, string2: str):
     product1 = None
     product2 = None
 
-    for _ in string1:
+    for _ in string1.lower():
         conv1 = dic[_]
         first.append(conv1)
 
-    for __ in string2:
+    for __ in string2.lower():
         conv2 = dic[__]
         second.append(conv2)
 
