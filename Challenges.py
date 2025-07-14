@@ -208,7 +208,10 @@ def longest_substring(string):
 
         idx += 1
     lone.sort(reverse=True)
-    return lone[0]
+    try:
+        return lone[0]
+    except IndexError:
+        print("Actually type a sequence lol.")
 
 
 def checker(string: str):
@@ -319,4 +322,4 @@ def reverser(string: str):
 
 
 longest = longest_substring("ahgrueuushhdhaaaaawuqughsuichchhcbbdd")
-print(longest_substring)
+print(longest)
